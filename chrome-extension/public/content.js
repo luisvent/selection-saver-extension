@@ -143,7 +143,7 @@ chrome.runtime.onMessage.addListener((obj, sender, response) => {
   };
 
   const isSelection = () => {
-    return window.getSelection().toString().length > 0;
+    return window.getSelection().toString().trim().length > 0;
   };
 
   const processSelection = (event) => {
