@@ -5,10 +5,10 @@
 The Selection Saver Chrome extension allows users to save selected text from web pages. This documentation provides an overview of the extension's functionality, architecture, and usage.
 
 #### Save Button
-<img src="ss2.png" width="300">
+<img src="ss2.png" width="400">
 
 #### Popup Interface
-<img src="ss1.png" width="300">
+<img src="ss1.png" width="400">
 
 
 ## Functionality

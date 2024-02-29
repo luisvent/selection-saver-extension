@@ -6,7 +6,13 @@ Backend api to save users selections
 - **/get : POST**: Receives a `token` parameter with the user id and returns a list of selections object and `page`, each page return 15 items
 ```js
 
-fetch('http://...api?token=<user-id>&page=1')
+await fetch(
+    `http://...api/get?token=<user-id>&page=1`,
+    {
+      method: "POST",
+      body: {},
+    }
+  );
 
 ```
 - **/add : POST**: Receives a object with `user` for user token and `selection` object for selection to save
