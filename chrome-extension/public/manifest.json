@@ -1,0 +1,29 @@
+{
+    "name": "Selection Saver",
+    "version": "1.0.0",
+    "description": "Save all selections",
+    "manifest_version": 3,
+    "author": "Luis Ventura",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "Selection Saver",
+        "default_icon": {
+            "16": "pin2.png",
+            "24": "pin2.png",
+            "32": "pin2.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "storage"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+    {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+  "jwt_private_key": "jwt_private_key",
+  "server": {
+    "host": "localhost",
+    "port": 3910
+  },
+  "db_url": "mongodb://localhost:27017/selection_saver",
+  "environment": "development",
+  "url": "http://localhost:3910/"
+}
