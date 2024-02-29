@@ -7,17 +7,17 @@ pipeline {
     triggers {
         pollSCM '*/5 * * * *'
     }
-    stage('Deploy') {
-        steps {
-            echo 'Deliver....'
-            bat """
-            echo "doing delivery stuff.."
-            cd api
-            xcopy *.* "C:\\Sites\\ss_api" /s /e /y
-            """
-        }
-    }
     stages {
+        stage('Deploy') {
+            steps {
+                echo 'Deliver....'
+                bat """
+                echo "doing delivery stuff.."
+                cd api
+                xcopy *.* "C:\\Sites\\ss_api" /s /e /y
+                """
+            }
+        }
         stage('Dependencies') {
             steps {
                 echo "Building.."
